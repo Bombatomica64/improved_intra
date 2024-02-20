@@ -30,9 +30,30 @@ body.bg-white {
 	color: var(--text-color) !important;
 }
 
-/* somewhat of a fix for Intra v3: don't apply text colors, since the background does not change */
-body #root .App {
-	color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+/* tailwind text color Intra v3 */
+.text-black {
+	color: var(--text-color) !important;
+}
+
+/* tailwind body background Intra v3 */
+.bg-zinc-50 {
+	background-color: var(--body-background-color) !important;
+}
+
+/* tailwind backgrounds Intra v3 */
+.bg-white {
+	background-color: var(--container-background-color) !important;
+}
+
+/* tailwind borders Intra v3 */
+.border-neutral-200,
+.border-white {
+	border-color: var(--general-border-color) !important;
+}
+
+/* achievement Intra v3 */
+.bg-zinc-100 {
+	background-color: var(--general-border-color) !important;
 }
 
 a:not([style*="color:"]):not(.btn),
